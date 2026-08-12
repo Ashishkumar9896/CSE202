@@ -7,6 +7,7 @@ class Student{
     int rollno;
     string name;
     int regno;
+    public:
     void display(){
         cout << "Roll No: " << rollno << endl;
         cout << "Name: " << name << endl;
