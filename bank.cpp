@@ -12,6 +12,11 @@ class Bank{
         name=b;
         balance=c;
     }
+    void getData(){
+        cout<<"Account Number: "<<accno<<endl;
+        cout<<"Name: "<<name<<endl;
+        cout<<"Balance: "<<balance<<endl;
+    }
     void deposit(float amount){
         balance+=amount;
         cout<<"Amount deposited: "<<amount<<endl;
@@ -31,6 +36,8 @@ int main(){
     
     Bank B;
     B.setData(12345,"John Doe",1000.0);
+    B.getData();
+    cout<<endl;
     B.deposit(500.0);
     B.withdraw(200.0);
     B.display();
